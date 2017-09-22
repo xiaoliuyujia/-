@@ -1,0 +1,20 @@
+/*以下代码是设置 跳转后的第二个界面*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    type="text/javascript"
+    src="http://localhost:63342/python 文件/testlogin.html"
+</script>
+<body bgcolor="#ffffff" onload="loadedvar=true;">
+<textarea cols="30" rows="10" wrap="hard" readonly="yes">欢迎注册一站网运维平台系统，请详细阅读本协议，需同意以后方能继续。</textarea>
+<form name="terms" action="http://localhost:63342/python%20文件/注册.html" method="get">
+    我同意: <input type="checkbox" name="agree" value="ON">
+    <input onclick="if (loadedvar) {if (document.terms.agree.checked) {document.terms.submit();} else {window.alert('kumikoda提示您，必须先同意才能跳转')}} else {window.alert('请稍等...')}" type="button" value="继续">
+    <input type="button" value="退出" onclick="document.location.href='http://localhost:63342/python%20文件/testlogin.html';" >
+</form>
+</body>
+</html>
