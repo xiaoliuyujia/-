@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign In Form</title>
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="usr_mail.css">
+    </head>
+    <body>
+   <button id="logout" type="button">Log Out</button>
+        <button id="logout" type="button">View</button>
+        <button id="logout" type="button">Setting</button>
+        <div class="relative">
+        <form action="index.html" method="post" id="usr_form">
+    
+      
+        <h1>Track Your Money! </h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span>Basic details</legend>
+          <label for="name">Transactor Name:</label>
+          <input type="text" id="name" name="user_name">
+          
+          <label for="mail">Transcation Date: (yyyy-mm-dd)</label>
+          <input type="email" id="mail" name="user_email">
+            <button type="button" id="get_date">Get Date</button>
+          
+          <label for="pay">Payment Amount:</label>
+          <input type="text" id="payment" name="user_password">
+          
+          <label>In/Out:</label>
+          <input type="radio" id="check" value="under_13" name="user_age" ><label for="under_13" class="light">Pay In</label><br>
+          <input type="radio" id="check" value="over_13" name="user_age" checked><label for="over_13" class="light">Pay Out </label>
+        </fieldset>
+        
+        <fieldset>
+          <legend><span class="number">2</span>Addition details</legend>
+          
+        </fieldset>
+        <fieldset>
+<!--
+        <label for="job">Country of transcations:</label>
+            
+        <select>
+          <optgroup id="dropdown">
+            <option value="Europe">Europe</option>
+            <option value="php_developor">Asia</option>
+            <option value="python_developer">North America</option>
+            <option value="rails_developer"> South America</option>
+            <option value="web_designer">Others</option>
+          </optgroup>
+        </select>
+-->
+        
+<!--
+          <label>Purpose:</label>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Food and Drink</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Entertainment</label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Academic</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Medicine</label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Transportation</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Bills</label><br>
+          <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Others(Put details in notes)</label><br>
+          <label for="bio">Notes:</label>
+          <textarea id="bio" name="user_bio" maxlength="80"></textarea>
+-->
+          <label>Notes</label>
+            <textarea id="bio" name="user_bio" maxlength="80"></textarea>
+            <label id="receive" class="b"></label>
+        
+        </fieldset>
+        <button type="button" id="save">Save</button>
+        <button type="button" id="reset">Reset</button>
+        
+        </form>
+            </div>
+      <script src="usr_main.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    </body>
+</html>
