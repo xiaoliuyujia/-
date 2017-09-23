@@ -1,0 +1,1 @@
+document.getElementById("register_button").onclick = function() {console.log(document.getElementById("name").value, document.getElementById("password").value, document.getElementById("re_password").value, document.getElementById("email").value)};
